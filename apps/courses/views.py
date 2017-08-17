@@ -31,4 +31,4 @@ def confirm(request, course_id):
 
 def delete(request, course_id):
     Course.objects.get(id=course_id).delete()
-    return redirect('/')
+    return redirect('/courses')
